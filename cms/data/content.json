@@ -1,0 +1,265 @@
+{
+  "site": {
+    "title": "Kelsey Rice | SEO Strategist & Content Leader",
+    "description": "Kelsey Rice - SEO Strategist & Content Leader. Making digital experiences easy to find and better to use. Expert in SEO, content strategy, and cross-functional leadership.",
+    "keywords": "SEO strategist, content strategy, digital marketing, Kelsey Rice, SEO consultant, content leadership",
+    "url": "https://seo4good.com",
+    "image": "kelsey-photo.jpg"
+  },
+  "hero": {
+    "greeting": "Hi, I'm Kelsey",
+    "titleLine1": "Making digital experiences",
+    "titleHighlight1": "easy to find",
+    "titleConnector": "— and",
+    "titleHighlight2": "better to use.",
+    "subtitle": "SEO Strategist & Content Leader with a passion for bridging editorial excellence with commercial impact.",
+    "ctaPrimary": "View My Work",
+    "ctaSecondary": "Let's Talk",
+    "ctaResume": "Resume",
+    "stat1": {
+      "value": "18.6",
+      "suffix": "%",
+      "label": "Conversion Rate"
+    },
+    "stat2": {
+      "value": "4",
+      "suffix": "+",
+      "label": "Major Brands"
+    }
+  },
+  "brands": {
+    "heading": "Trusted by industry leaders",
+    "items": [
+      { "name": "Houzz", "color": "#00c86f" },
+      { "name": "Three Ships", "color": "#4A90D9" },
+      { "name": "RxSense", "color": "#00B4D8" },
+      { "name": "SingleCare", "color": "#00B4D8" }
+    ]
+  },
+  "about": {
+    "tag": "About Me",
+    "heading": "Turning search visibility into real business results",
+    "leadParagraph": "I'm an SEO strategist who believes great content shouldn't be hard to find. With experience spanning healthcare, home improvement, and e-commerce, I specialize in creating content strategies that satisfy both users and search engines.",
+    "bodyParagraph": "My approach combines data-driven insights with editorial excellence. I've led cross-functional teams to launch products in new markets, built content flywheels that generate organic backlinks, and created page types that convert at nearly 19%.",
+    "highlights": [
+      {
+        "title": "Strategic Leadership",
+        "description": "Cross-functional collaboration from ideation to launch"
+      },
+      {
+        "title": "Data-Driven Results",
+        "description": "Measurable impact on rankings and conversions"
+      },
+      {
+        "title": "User-First Content",
+        "description": "Editorial quality meets search optimization"
+      }
+    ],
+    "testimonial": {
+      "quote": "Kelsey's ability to bridge the gap between editorial and commercial content is exceptional. The page types she developed are now our highest converters.",
+      "author": "— Product Partner"
+    }
+  },
+  "work": {
+    "tag": "Featured Work",
+    "heading": "Projects that moved the needle",
+    "subheading": "Deep dives into strategies that delivered measurable results",
+    "caseStudies": [
+      {
+        "tag": "Content Strategy",
+        "title": "Bridging Editorial and Commercial Content",
+        "summary": "A pharmacy partner's request for a COVID vaccine hub sparked a new page type that satisfied both transactional and informational intents.",
+        "challenge": "Create content that serves users seeking information while also driving conversions for commercial products.",
+        "approach": "Worked with product, design, and engineering to build a new page type with dynamic Rx pricing, on-page content, and related resources.",
+        "resultStat": "18.6%",
+        "resultLabel": "Conversion Rate",
+        "resultDescription": "Now the highest-converting page type apart from product pages."
+      },
+      {
+        "tag": "Link Building",
+        "title": "Creating a Backlink Flywheel with Data Journalism",
+        "summary": "Leveraged original research and data stories to build organic backlinks at scale.",
+        "challenge": "Build domain authority through high-quality backlinks without relying on outreach-heavy campaigns.",
+        "approach": "Created data-driven content that journalists and researchers naturally want to cite, establishing a sustainable link-earning engine.",
+        "resultStat": "",
+        "resultLabel": "",
+        "resultDescription": "Established a repeatable process for earning editorial links from authoritative publications."
+      },
+      {
+        "tag": "Market Expansion",
+        "title": "Expanding into New Markets via Cross-Functional Leadership",
+        "summary": "Led the content strategy for launching products in Spanish-speaking markets.",
+        "challenge": "Enter new markets with localized content that resonates culturally while maintaining SEO best practices.",
+        "approach": "Coordinated across product, engineering, and localization teams to develop a comprehensive market entry strategy.",
+        "resultStat": "",
+        "resultLabel": "",
+        "resultDescription": "Successfully launched in new markets with content that ranks competitively against established local players."
+      }
+    ]
+  },
+  "expertise": {
+    "tag": "What I Do",
+    "heading": "Areas of expertise",
+    "items": [
+      {
+        "title": "SEO Strategy",
+        "description": "Technical and content SEO that drives organic growth and measurable business outcomes."
+      },
+      {
+        "title": "Content Strategy",
+        "description": "Editorial planning that balances user needs with business goals and search intent."
+      },
+      {
+        "title": "Product Integration",
+        "description": "Bridging content, product, and engineering to build SEO-optimized features."
+      },
+      {
+        "title": "Data Journalism",
+        "description": "Original research and data stories that earn links and establish authority."
+      },
+      {
+        "title": "International SEO",
+        "description": "Localization and market expansion strategies for global reach."
+      },
+      {
+        "title": "Team Leadership",
+        "description": "Cross-functional collaboration and stakeholder management."
+      }
+    ]
+  },
+  "contact": {
+    "tag": "Get in Touch",
+    "heading": "Let's collaborate!",
+    "subheading": "Ready to make your digital experiences easier to find? I'd love to hear about your project.",
+    "email": "kels.seo4good@gmail.com",
+    "phone": "(219) 742-9898",
+    "location": "Zionsville, IN",
+    "linkedin": "https://www.linkedin.com/in/kelsrice"
+  },
+  "footer": {
+    "copyright": "2026 Kelsey Rice. All rights reserved."
+  },
+  "chat": {
+    "title": "Ask Kelsey's AI",
+    "subtitle": "Learn about my experience",
+    "greeting": "Hi! I'm Kelsey's AI assistant. Ask me anything about her experience, skills, or projects!",
+    "quickReplies": [
+      { "label": "Current role", "message": "What's your current role?" },
+      { "label": "Experience", "message": "Tell me about your experience" },
+      { "label": "Tools", "message": "What tools do you use?" },
+      { "label": "AI projects", "message": "What are your AI projects?" },
+      { "label": "Contact", "message": "How can I contact you?" }
+    ]
+  },
+  "resume": {
+    "name": "Kelsey Rice",
+    "location": "Zionsville, IN",
+    "email": "kels.seo4good@gmail.com",
+    "phone": "(219) 742-9898",
+    "linkedin": "linkedin.com/in/kelsrice",
+    "linkedinUrl": "https://www.linkedin.com/in/kelsrice",
+    "summary": "SEO expert, data-driven content strategist, and trained journalist with an eye for design. Nearly 10 years of experience in SEO with the last six in healthtech. Product-led approach to search strategy, keeping both humans and algorithms in mind. Cross-functional collaborator focused on driving meaningful traffic, building authority, and optimizing user experiences.",
+    "skills": [
+      "SEO Strategy & Roadmapping",
+      "Project Management & Sprint Planning",
+      "Data Analysis",
+      "Technical SEO Optimization",
+      "Team Leadership & Mentorship",
+      "Cross-functional Collaboration",
+      "Content Optimization & Editing",
+      "Keyword Research & Competitive Analysis"
+    ],
+    "tools": [
+      "Ahrefs",
+      "SEMrush",
+      "GA4",
+      "GSC",
+      "Looker Studio",
+      "Tableau",
+      "Screaming Frog",
+      "Jet Octopus"
+    ],
+    "geoProjects": [
+      "Technical SEO for non-JS rendering improved AI referral traffic by 32%",
+      "Discoverability grew by 733 LPs",
+      "Launched new site directory for GEO experimentation",
+      "Leveraged LLMs to scale key takeaways across 1K+ articles"
+    ],
+    "education": [
+      {
+        "school": "Indiana University",
+        "degree": "B.A. in Journalism",
+        "certificate": "Certificate in Informatics & UX Design"
+      }
+    ],
+    "experience": [
+      {
+        "company": "SingleCare (DTC) / RxSense (B2B)",
+        "duration": "6+ years",
+        "roles": [
+          {
+            "title": "Director of SEO",
+            "period": "2022 - Present",
+            "bullets": [
+              "Built and scaled SingleCare's SEO program over six years, driving a 12x increase in organic revenue",
+              "Adapt the search strategy and mentor the team through AI-driven search disruption",
+              "Plan the roadmap and content calendar based on performance data, competitive analysis, and business goals"
+            ]
+          },
+          {
+            "title": "Senior SEO Manager",
+            "period": "2020 - 2022",
+            "bullets": [
+              "Drove 25x organic growth in three years",
+              "Managed the full product development of Spanish site and pharmacy directory from research to release",
+              "Enhanced UX and trust signals to restore authority in a post-pandemic health category"
+            ]
+          },
+          {
+            "title": "SEO Specialist",
+            "period": "2019 - 2020",
+            "bullets": [
+              "Built an API-driven content system, saving thousands of manual editing hours per year",
+              "Created scalable content frameworks and workflows across departments for brand consistency and quality"
+            ]
+          }
+        ]
+      },
+      {
+        "company": "Three Ships",
+        "duration": "11 months",
+        "roles": [
+          {
+            "title": "Reviews Editor",
+            "period": "2018 - 2019",
+            "bullets": [
+              "Launched a new business line as the end-to-end owner of the home products affiliate hub"
+            ]
+          }
+        ]
+      },
+      {
+        "company": "Houzz",
+        "duration": "2 years",
+        "roles": [
+          {
+            "title": "Content Marketing Specialist",
+            "period": "2018",
+            "bullets": [
+              "Optimized content for new site features",
+              "Wrote and updated product guides"
+            ]
+          },
+          {
+            "title": "Content Marketing Production Coordinator",
+            "period": "2016 - 2018",
+            "bullets": [
+              "Managed and scaled the content partnerships program 3x its original size",
+              "Scaled to 165 partners and 4.5K+ articles in two years"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

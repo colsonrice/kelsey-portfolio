@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelsey Portfolio CMS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Login Screen -->
+        <div id="login-screen" class="screen active">
+            <div class="login-container">
+                <div class="login-header">
+                    <h1>Portfolio CMS</h1>
+                    <p>Enter your password to continue</p>
+                </div>
+                <form id="login-form">
+                    <div class="form-group">
+                        <input type="password" id="password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Login</button>
+                    <p id="login-error" class="error-message"></p>
+                </form>
+            </div>
+        </div>
+
+        <!-- Main Dashboard -->
+        <div id="dashboard" class="screen">
+            <header class="header">
+                <div class="header-left">
+                    <h1>Portfolio CMS</h1>
+                </div>
+                <div class="header-right">
+                    <a href="/preview" target="_blank" class="btn btn-secondary">Preview Site</a>
+                    <button id="save-btn" class="btn btn-primary">Save Changes</button>
+                    <button id="build-btn" class="btn btn-success">Build & Deploy</button>
+                    <button id="logout-btn" class="btn btn-ghost">Logout</button>
+                </div>
+            </header>
+
+            <div class="main-content">
+                <nav class="sidebar">
+                    <ul class="nav-list">
+                        <li><a href="#" data-section="site" class="nav-link active">Site Settings</a></li>
+                        <li><a href="#" data-section="hero" class="nav-link">Hero Section</a></li>
+                        <li><a href="#" data-section="about" class="nav-link">About</a></li>
+                        <li><a href="#" data-section="work" class="nav-link">Case Studies</a></li>
+                        <li><a href="#" data-section="expertise" class="nav-link">Expertise</a></li>
+                        <li><a href="#" data-section="contact" class="nav-link">Contact</a></li>
+                        <li><a href="#" data-section="resume" class="nav-link">Resume</a></li>
+                        <li><a href="#" data-section="images" class="nav-link">Images</a></li>
+                        <li><a href="#" data-section="settings" class="nav-link">Settings</a></li>
+                    </ul>
+                </nav>
+
+                <main class="content">
+                    <!-- Site Settings -->
+                    <section id="section-site" class="section active">
+                        <h2>Site Settings</h2>
+                        <div class="form-group">
+                            <label>Site Title</label>
+                            <input type="text" data-path="site.title">
+                        </div>
+                        <div class="form-group">
+                            <label>Meta Description</label>
+                            <textarea data-path="site.description" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Keywords</label>
+                            <input type="text" data-path="site.keywords">
+                        </div>
+                        <div class="form-group">
+                            <label>Site URL</label>
+                            <input type="url" data-path="site.url">
+                        </div>
+                    </section>
+
+                    <!-- Hero Section -->
+                    <section id="section-hero" class="section">
+                        <h2>Hero Section</h2>
+                        <div class="form-group">
+                            <label>Greeting</label>
+                            <input type="text" data-path="hero.greeting">
+                        </div>
+                        <div class="form-group">
+                            <label>Title Line 1</label>
+                            <input type="text" data-path="hero.titleLine1">
+                        </div>
+                        <div class="form-group">
+                            <label>Highlight 1 (colored text)</label>
+                            <input type="text" data-path="hero.titleHighlight1">
+                        </div>
+                        <div class="form-group">
+                            <label>Connector</label>
+                            <input type="text" data-path="hero.titleConnector">
+                        </div>
+                        <div class="form-group">
+                            <label>Highlight 2 (colored text)</label>
+                            <input type="text" data-path="hero.titleHighlight2">
+                        </div>
+                        <div class="form-group">
+                            <label>Subtitle</label>
+                            <textarea data-path="hero.subtitle" rows="2"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Primary CTA Text</label>
+                                <input type="text" data-path="hero.ctaPrimary">
+                            </div>
+                            <div class="form-group">
+                                <label>Secondary CTA Text</label>
+                                <input type="text" data-path="hero.ctaSecondary">
+                            </div>
+                        </div>
+                        <h3>Stats</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Stat 1 Value</label>
+                                <input type="text" data-path="hero.stat1.value">
+                            </div>
+                            <div class="form-group">
+                                <label>Stat 1 Suffix</label>
+                                <input type="text" data-path="hero.stat1.suffix">
+                            </div>
+                            <div class="form-group">
+                                <label>Stat 1 Label</label>
+                                <input type="text" data-path="hero.stat1.label">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Stat 2 Value</label>
+                                <input type="text" data-path="hero.stat2.value">
+                            </div>
+                            <div class="form-group">
+                                <label>Stat 2 Suffix</label>
+                                <input type="text" data-path="hero.stat2.suffix">
+                            </div>
+                            <div class="form-group">
+                                <label>Stat 2 Label</label>
+                                <input type="text" data-path="hero.stat2.label">
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- About Section -->
+                    <section id="section-about" class="section">
+                        <h2>About Section</h2>
+                        <div class="form-group">
+                            <label>Section Tag</label>
+                            <input type="text" data-path="about.tag">
+                        </div>
+                        <div class="form-group">
+                            <label>Heading</label>
+                            <input type="text" data-path="about.heading">
+                        </div>
+                        <div class="form-group">
+                            <label>Lead Paragraph</label>
+                            <textarea data-path="about.leadParagraph" rows="4"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Body Paragraph</label>
+                            <textarea data-path="about.bodyParagraph" rows="4"></textarea>
+                        </div>
+                        <h3>Highlights</h3>
+                        <div id="about-highlights"></div>
+                        <h3>Testimonial</h3>
+                        <div class="form-group">
+                            <label>Quote</label>
+                            <textarea data-path="about.testimonial.quote" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Author</label>
+                            <input type="text" data-path="about.testimonial.author">
+                        </div>
+                    </section>
+
+                    <!-- Work/Case Studies Section -->
+                    <section id="section-work" class="section">
+                        <h2>Case Studies</h2>
+                        <div class="form-group">
+                            <label>Section Tag</label>
+                            <input type="text" data-path="work.tag">
+                        </div>
+                        <div class="form-group">
+                            <label>Heading</label>
+                            <input type="text" data-path="work.heading">
+                        </div>
+                        <div class="form-group">
+                            <label>Subheading</label>
+                            <input type="text" data-path="work.subheading">
+                        </div>
+                        <div id="case-studies-list"></div>
+                    </section>
+
+                    <!-- Expertise Section -->
+                    <section id="section-expertise" class="section">
+                        <h2>Expertise</h2>
+                        <div class="form-group">
+                            <label>Section Tag</label>
+                            <input type="text" data-path="expertise.tag">
+                        </div>
+                        <div class="form-group">
+                            <label>Heading</label>
+                            <input type="text" data-path="expertise.heading">
+                        </div>
+                        <div id="expertise-list"></div>
+                    </section>
+
+                    <!-- Contact Section -->
+                    <section id="section-contact" class="section">
+                        <h2>Contact Information</h2>
+                        <div class="form-group">
+                            <label>Section Tag</label>
+                            <input type="text" data-path="contact.tag">
+                        </div>
+                        <div class="form-group">
+                            <label>Heading</label>
+                            <input type="text" data-path="contact.heading">
+                        </div>
+                        <div class="form-group">
+                            <label>Subheading</label>
+                            <textarea data-path="contact.subheading" rows="2"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" data-path="contact.email">
+                            </div>
+                            <div class="form-group">
+                                <label>Phone</label>
+                                <input type="tel" data-path="contact.phone">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Location</label>
+                                <input type="text" data-path="contact.location">
+                            </div>
+                            <div class="form-group">
+                                <label>LinkedIn URL</label>
+                                <input type="url" data-path="contact.linkedin">
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Resume Section -->
+                    <section id="section-resume" class="section">
+                        <h2>Resume</h2>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" data-path="resume.name">
+                            </div>
+                            <div class="form-group">
+                                <label>Location</label>
+                                <input type="text" data-path="resume.location">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" data-path="resume.email">
+                            </div>
+                            <div class="form-group">
+                                <label>Phone</label>
+                                <input type="tel" data-path="resume.phone">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Summary</label>
+                            <textarea data-path="resume.summary" rows="4"></textarea>
+                        </div>
+                        <h3>Skills (one per line)</h3>
+                        <div class="form-group">
+                            <textarea id="resume-skills" rows="8"></textarea>
+                        </div>
+                        <h3>Tools (one per line)</h3>
+                        <div class="form-group">
+                            <textarea id="resume-tools" rows="4"></textarea>
+                        </div>
+                        <h3>GEO/LLM Projects (one per line)</h3>
+                        <div class="form-group">
+                            <textarea id="resume-geo" rows="4"></textarea>
+                        </div>
+                        <h3>Work Experience</h3>
+                        <div id="resume-experience"></div>
+                    </section>
+
+                    <!-- Images Section -->
+                    <section id="section-images" class="section">
+                        <h2>Images</h2>
+                        <div class="upload-area">
+                            <input type="file" id="image-upload" accept="image/*">
+                            <label for="image-upload" class="upload-label">
+                                <span>Click to upload or drag and drop</span>
+                                <small>PNG, JPG, GIF, WEBP up to 5MB</small>
+                            </label>
+                        </div>
+                        <div id="images-grid" class="images-grid"></div>
+                    </section>
+
+                    <!-- Settings Section -->
+                    <section id="section-settings" class="section">
+                        <h2>Settings</h2>
+                        <h3>Change Password</h3>
+                        <form id="password-form">
+                            <div class="form-group">
+                                <label>Current Password</label>
+                                <input type="password" id="current-password" required>
+                            </div>
+                            <div class="form-group">
+                                <label>New Password</label>
+                                <input type="password" id="new-password" required minlength="6">
+                            </div>
+                            <div class="form-group">
+                                <label>Confirm New Password</label>
+                                <input type="password" id="confirm-password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Change Password</button>
+                            <p id="password-message" class="message"></p>
+                        </form>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast notifications -->
+    <div id="toast" class="toast"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
