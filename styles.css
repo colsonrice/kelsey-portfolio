@@ -286,31 +286,11 @@ p {
 /* Mobile menu */
 @media (max-width: 768px) {
     .mobile-menu-toggle {
-        display: block;
+        display: none;
     }
 
     .nav-links {
-        position: fixed;
-        top: 72px;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        flex-direction: column;
-        justify-content: center;
-        gap: var(--space-2xl);
-        background: var(--color-bg);
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity var(--transition-base), visibility var(--transition-base);
-    }
-
-    .nav-links.active {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .nav-links a {
-        font-size: 1.5rem;
+        display: none;
     }
 }
 
