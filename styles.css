@@ -377,8 +377,20 @@ p {
 .hero-subtitle {
     font-size: 1.25rem;
     color: var(--color-text-muted);
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space-md);
     max-width: 500px;
+}
+
+.hero-bio {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    max-width: 540px;
+    margin-bottom: var(--space-sm);
+}
+
+.hero-bio:last-of-type {
+    margin-bottom: var(--space-xl);
 }
 
 .hero-cta {
@@ -492,7 +504,7 @@ p {
 
 .hero-stats {
     position: absolute;
-    bottom: 10%;
+    bottom: -5%;
     right: -10%;
     display: flex;
     flex-direction: column;
@@ -510,6 +522,25 @@ p {
 
 .stat-card:nth-child(2) {
     animation-delay: -2s;
+}
+
+.stat-card-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: block;
+}
+
+.stat-card-link:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-color: var(--color-primary-light);
+    animation: none;
+    transform: translateY(-4px);
+}
+
+.stat-card-link:hover .stat-label {
+    color: var(--color-primary-light);
 }
 
 @keyframes float {
@@ -543,7 +574,7 @@ p {
 /* Scroll indicator */
 .scroll-indicator {
     position: absolute;
-    bottom: var(--space-xl);
+    bottom: var(--space-sm);
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -867,6 +898,32 @@ p {
 
 .case-study.expanded .case-study-toggle span::before {
     content: 'Hide ';
+}
+
+.case-study-list {
+    list-style: none;
+    padding: 0;
+    margin: var(--space-sm) 0 0 0;
+}
+
+.case-study-list li {
+    position: relative;
+    padding-left: 1.5em;
+    margin-bottom: var(--space-xs);
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.case-study-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-primary-light);
 }
 
 /* ================================
@@ -1338,6 +1395,14 @@ p {
     }
 
     .hero-subtitle {
+        margin: 0 auto var(--space-md);
+    }
+
+    .hero-bio {
+        margin: 0 auto var(--space-sm);
+    }
+
+    .hero-bio:last-of-type {
         margin: 0 auto var(--space-xl);
     }
 

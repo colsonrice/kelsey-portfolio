@@ -84,7 +84,7 @@ const kelseyKnowledge = [
         patterns: [
             /education|degree|school|university|studied|college|indiana|stanford|learn/i
         ],
-        response: "My educational background:\n\n• B.A. in Journalism with concentration in Informatics - Indiana University Bloomington (2012-2016)\n• Certificate in Informatics & UX Design\n• Specialized in enterprise journalism and interactive/digital media\n• Creative Writing coursework at Stanford University (2018)\n\nI was also involved in the Independent Council for Women at IU, the IU Media School Student Advisory Board, and volunteered at the IU Auditorium."
+        response: "My educational background:\n\n• B.A. in Journalism with concentration in Informatics - Indiana University Bloomington (2012-2016)\n• Certificate in Informatics & UX Design\n• Specialized in enterprise journalism and interactive/digital media\n• Creative Writing coursework at Stanford University (2018)"
     },
     {
         name: 'results',
@@ -155,6 +155,38 @@ const kelseyKnowledge = [
             /who is|who are you|tell me about|introduce|about kelsey|yourself/i
         ],
         response: "I'm Kelsey Rice - an SEO expert, data-driven content strategist, and trained journalist with an eye for design.\n\nCurrently, I'm the Director of SEO at SingleCare/RxSense, where I've driven 12x organic revenue growth. With nearly 10 years of experience, I take a product-led approach to search strategy, keeping both humans and algorithms in mind.\n\nI'm passionate about creating digital experiences that are easy to find and better to use!"
+    },
+    {
+        name: 'chooseAdventure',
+        patterns: [
+            /choose your adventure|choose.*adventure/i
+        ],
+        response: "You can ask me about:\nA) My sweet little family\nB) What I'd do if SEO didn't exist\nC) My current playlist\nPick a letter. 🙂"
+    },
+    {
+        name: 'adventureA',
+        patterns: [
+            /^a[).\s]?$/i,
+            /^a\b/i,
+            /family|married|kids|kiddos|perry|dean|colson/i
+        ],
+        response: "I'm married to a creative genius, Colson, and we have two kiddos: Perry (3.5 y/o) and Dean (almost 2)."
+    },
+    {
+        name: 'adventureB',
+        patterns: [
+            /^b[).\s]?$/i,
+            /if seo didn|art teacher|didn.*exist/i
+        ],
+        response: "If SEO wasn't my full-time gig, I'd love to be an art teacher!"
+    },
+    {
+        name: 'adventureC',
+        patterns: [
+            /^c[).\s]?$/i,
+            /playlist|music|listening|favorite.*artist|olivia dean|creed|nickelback/i
+        ],
+        response: "My favorite new artist is Olivia Dean, but I'm a faithful fan of Creed and Nickelback."
     },
     {
         name: 'greeting',

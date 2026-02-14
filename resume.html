@@ -140,6 +140,10 @@
             color: var(--color-border);
         }
 
+        .resume-contact span.contact-highlight {
+            color: var(--color-primary-light);
+        }
+
         .resume-summary {
             max-width: 700px;
             margin: 0 auto;
@@ -339,10 +343,14 @@
         }
 
         .highlight-box li::before {
-            content: "\u2192";
+            content: "";
             position: absolute;
             left: 0;
-            color: var(--color-accent);
+            top: 8px;
+            width: 6px;
+            height: 6px;
+            background: var(--color-primary);
+            border-radius: 50%;
         }
 
         /* Print Styles */
@@ -446,11 +454,11 @@
             <header class="resume-header">
                 <h1 class="resume-name">Kelsey Rice</h1>
                 <div class="resume-contact">
-                    <span>Zionsville, IN</span>
+                    <span class="contact-highlight">Zionsville, IN</span>
                     <span>|</span>
                     <a href="mailto:kels.seo4good@gmail.com">kels.seo4good@gmail.com</a>
                     <span>|</span>
-                    <span>(219) 742-9898</span>
+                    <span class="contact-highlight">(219) 742-9898</span>
                     <span>|</span>
                     <a href="https://www.linkedin.com/in/kelsrice" target="_blank">linkedin.com/in/kelsrice</a>
                 </div>
@@ -511,15 +519,9 @@
                         <h2 class="section-title">GEO/LLM Projects</h2>
                         <div class="highlight-box">
                             <ul>
-                                
-                                <li>Technical SEO for non-JS rendering improved AI referral traffic by 32%</li>
-                                
-                                <li>Discoverability grew by 733 LPs</li>
-                                
+                                <li>Technical enhancements for non-JS rendering</li>
                                 <li>Launched new site directory for GEO experimentation</li>
-                                
                                 <li>Leveraged LLMs to scale key takeaways across 1K+ articles</li>
-                                
                             </ul>
                         </div>
                     </section>
